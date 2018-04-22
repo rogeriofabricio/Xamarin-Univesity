@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 1: Hello World</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the StartHere -->
+    <header>Learning C# with Xamarin: Introduction to C#</header>
+
+   	<section id="main">
+
+		<h1 id="page-title"></h1>
+
+		<h2>Duration</h2>
+		<p>30 minutes</p>
+
+		<!-- - - - - - - - - Goals - - - - - - - - -->
+
+		<h2 id="goals">Lab goals</h2>
+		<p>
+			This exercise takes you through the entire process of building and running a C# program using
+			<strong>Visual Studio</strong>. The C# code will be very simple. Most of your time will be
+			spent creating a project, compiling it into an executable program, and running it to test
+			your work. The overall steps are listed below:
+		</p>
+
+		<ul>
+			<li>Create a new Console application.</li>
+			<li>Write a custom message to the Console window.</li>
+			<li>Build and run the program.</li>
+		</ul>
+		
+		<p>
+			Below is the output from the finished application.
+		</p>
+		<img src="./res/images/Part1.Completed.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -" />
+
+		<!-- - - - - - - - - Supplied resources - - - - - - - - -->
+
+		<h2>Required assets</h2>
+		<p>
+			The provided <strong>Exercise 1/Part1.Completed</strong> folder contains a completed version
+			of the exercise you can use to check your work. Please make sure you have this folder before you begin.
+		</p>
+
+		<div class="hintblock">
+			<strong>Tip:</strong> If you are doing this exercise live in a session, make sure to make good use
+			of the instructor, they are online to answer any questions you have!
+		</div>
+
+		<!-- - - - - - - - - Steps - - - - - - - - -->
+
+		<h1 id="steps">Steps</h1>
+
+		<p>
+			Below are the step-by-step instructions to implement the exercise.
+		</p>
+
+		<h2>Create a new Console application</h2>
+		<p>
+			You will use <strong>Visual Studio</strong> to create an application. <strong>Visual Studio</strong>
+			is an <strong>Integrated Development Environment (IDE)</strong> which means it has all the tools
+			you need to write, build, and run your program.
+		</p>
+
+		<ol>
+			<li>
+				Start <strong>Visual Studio</strong>. You should see something similar to the image shown below.	
+			</li>
+
+			<li>
+				Create a new <strong>Project</strong>. Select <strong>File &gt; New &gt; Project</strong> menu entry (see below).
+			<img class="indent-none" src="./res/images/Part1.VS_NewSolutionMenu.png" width =" " alt="" /></li>
+
+			<li>
+				In the <strong> New Project</strong> dialog, click  <strong> Visual C# &gt; Windows Classic Desktop &gt; Console App </strong>, you can also type console in the search bar and have Visual Studio find the appropriate template.
+				<img class="indent-none" src="./res/images/Part1.VS_Console.png" width = "" alt= ""/>
+            If you are using Visual Studio for Mac, click the <strong>new project</strong> button on the start screen and select <strong> .NET Core &gt; Console Application </strong> and then click <strong> next </strong> <img class="indent-none" src="./res/images/Part1.VS-Mac_NewProject.png"  alt=""/> </li>
+
+			<li>
+				
+				A Console project interacts with the user through a text-based window. It does not have a
+				Graphical User Interface (GUI) with buttons and text-input areas but it is a great way to get started
+			as a programmer since it requires very little code to get an application running. </li>
+			<li>Enter <strong>HelloWorld</strong> in the <strong> Name</strong> field. The <strong>Name</strong>
+				field determines the name of the <strong>Project</strong>. 
+			</li>
+				
+			<li>
+				Notice how the <strong>Solution name</strong> field gets filled in automatically to match the project name. A <em>Solution</em>
+				is a container that can hold multiple projects. For example, you could have a single solution with both your Android and iOS
+				projects inside it. For solutions that contain only a single project, it makes sense for the project name and the solution name to match.
+			</li>
+
+			<li>
+				In the <strong>Location</strong> field, enter the folder where you would like to store your work.
+			</li>
+
+			<li>
+			When you have everything filled in, click <strong>OK.</strong></li>
+
+			<li>
+				Visual Studio will create the Solution, the Project, and some starter C# code for you (see below).
+			  <img src="./res/images/Part1.VS_StarterSolution.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -"  class="indent-none" />
+			</li>
+
+		</ol>
+
+		<h2>Write a custom message to the Console window</h2>
+		<p>
+			Visual Studio adds some convenient starter code for you when you create a new project.
+			In this part, you will spend a few minutes working with Visual Studio to examine this
+			starter code. You will then modify the code so it prints your custom message.
+		</p>
+
+		<ol>
+			<li>
+				Visual Studio makes it easy to work with your code. The Solution view along the left edge
+				shows you your entire Solution. The text editor in the central area lets you modify the contents
+				of your files. The image below shows these two key areas.
+				<img src="./res/images/Part1.VS_Parts.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -" class="indent-none" />
+			</li>
+
+			<li>
+				Visual Studio puts the starter code in a file named <strong>Program.cs</strong>. The code in the file is called
+				<em>source code</em> and the file is called a <em>source file</em>. C# source files have a <strong>.cs</strong>
+				extension. The Solution view lists the <strong>Program.cs</strong> file (see below).
+				<img class="indent-none" src="./res/images/Part1.VS_SolutionView.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -" />
+			</li>
+
+			<li>
+				The <strong>Program.cs</strong> file should already be open in the text editor. If it is not, double-click
+				on it in the Solution view to open it.
+			</li>
+
+			<li>
+				Your C# program can make use of an extensive <strong>Standard Library</strong> that provides pre-written
+				pieces of code that you can call on to help you get your work done. For example, there are routines to
+				compute square root, search within text, read from a file on disk, etc. The library is divided into
+				<em>namespaces</em> where a namespace is a group of related code. The most common namespace is
+				<code>System</code>. If your program needs to use something from <code>System</code>, you place the
+				line of code shown below at the top of your source file. Your code will need to use the <code>Console</code>
+				class that is part of the <code>System</code> namespace so it should contain the line of code shown below.
+<pre class="prettyprint">
+using System;
+</pre>
+			</li>
+
+			<li>
+				You should put all of your own code inside one of your own namespaces (see below).
+				Most programmers use their company name as part of their namespace name to keep their code
+				clearly labeled and distinct from third-party code that they might incorporate into their
+				projects. Using a namespace is not technically required but it is considered a best practice.
+<pre class="prettyprint">
+namespace HelloWorld
+{
+  ...
+}
+</pre>
+			</li>
+
+			<li>
+				Inside your namespace, Visual Studio created a class named <code>MainClass</code> (see below).
+				For now, we can define a class informally as a group of related methods. 
+				<pre class="prettyprint">
+class MainClass
+{
+  ...
+}
+</pre>
+			</li>
+
+			<li>
+				Inside <code>MainClass</code>, Visual Studio created a method named <code>Main</code> (see below).
+				A <em>method</em> is a sequence of program instructions with a name. Other programming languages
+				use the terms <em>function</em>, <em>procedure</em>, or <em>subroutine</em> for this concept.
+				The <code>Main</code> method is the program <em>entry point</em>; that is, it runs automatically
+				when the program is started. The program automatically shuts down when <code>Main</code> completes
+				execution. The C# language defines very precise rules for how <code>Main</code> must be written;
+				for example, the modifiers <code>public</code> and <code>static</code> are required, the name
+				must be <code>Main</code> with an upper-case <code>M</code>, etc.
+                <pre class="prettyprint">
+class MainClass
+{
+  public static void Main(string[] args)
+  {
+    ...
+  }
+}
+</pre>
+			</li>
+
+			<li>
+				Inside <code>Main</code> there should be a call to <code>Console.WriteLine</code> method (see below).
+				<code>Console</code> is a class and <code>WriteLine</code> is a method defined inside it.
+				You use <code>WriteLine</code> to print something to the Console window (remember
+				that our project type is <strong>Console Project</strong> so the user will see a
+				Console window automatically when the program runs).
+<pre class="prettyprint">
+Console.WriteLine("Hello World!");
+</pre>
+			</li>
+
+			<li>
+				Change the <code>"Hello World!"</code> text so the program will print a message of your choice.
+			</li>
+
+		</ol>
+
+		<h2>Build and run the program</h2>
+
+		<p>
+			In order to test your program, you must first build an <em>executable</em> file from your source code. 
+			The precise term for this process is <em>build</em>. The <em>compiler</em> performs the key part of the build
+			process since it translates the source code you wrote into the machine code that the CPU can understand. 
+			For our simple program, compilation is the main step of the build process. Other projects such as
+			Android or iOS apps have complicated build processes that require steps such as code generation or the
+			packaging multiple files into a single archive.
+		</p>
+
+		<ol>
+
+			<li>
+				To build your project, click on the <strong>Build &gt; Build Solution</strong> menu entry in Visual Studio (see below).
+				<img src="./res/images/Part1.VS_Build_1.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -" width="" class="indent-none" />
+			</li>
+
+			<li>
+				If your program is correct, you should see the message <strong>Build succeded</strong>  message in the output window at the bottom of the screen.
+			</li>
+
+			<li>
+				If your program has an error, Visual Studio will show you the line that has the problem along with a
+				short description of the issue (see below). Examine the indicated line, fix the problem, and try to
+				build again.
+				<img src="./res/images/Part1.VS_Error.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -"  class="indent-none" />
+			</li>
+
+			<li>
+				To run your program, click on the <strong>Debug &gt; Start Without Debugging</strong> menu entry (see below).
+				<img src="./res/images/Part1.VS_Build_3.png" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -"  class="indent-none" />
+			</li>
+
+			<li>
+				A Console window should appear on your screen and display the message you passed to <code>Console.WriteLine</code>
+				as shown below.
+				<img class="indent-none" src="./res/images/Part1.Completed.png" width="" alt="- - - - - - - - - MISSING IMAGE - - - - - - - - - -" />
+			</li>
+
+		</ol>
+
+		<!-- - - - - - - - - Summary - - - - - - - - -->
+
+		<h1>Summary</h1>
+		In this lab, you worked through the complete software development cycle: create a project, write source code,
+		build, and execute. You also got a quick overview of how to use Visual Studio. These core skills will be useful
+		as you continue your study and start building applications that are more complex.
+		<br />
+		<br />
+
+		<div class="align-right">
+			<a href="../Start%20Here.html">Go Back</a>
+		</div>
+	</section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+   <footer>Copyright (C) 2018 Xamarin Inc., Microsoft.</footer>
+</body>
+</html>
