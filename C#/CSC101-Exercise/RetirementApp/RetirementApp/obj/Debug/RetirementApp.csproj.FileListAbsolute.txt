@@ -1,0 +1,7 @@
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\bin\Debug\RetirementApp.exe.config
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\bin\Debug\RetirementApp.exe
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\bin\Debug\RetirementApp.pdb
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\obj\Debug\RetirementApp.csprojResolveAssemblyReference.cache
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\obj\Debug\RetirementApp.csproj.CoreCompileInputs.cache
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\obj\Debug\RetirementApp.exe
+C:\Users\ROGERIO\Documents\GitHub\Xamarin-Univesity\C#\CSC101-Exercise\RetirementApp\RetirementApp\obj\Debug\RetirementApp.pdb
